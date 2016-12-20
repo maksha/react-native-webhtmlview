@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { WebView } from 'react-native'
 
-class WebContainer extends Component {
+class WebHtmlView extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -85,9 +85,9 @@ class WebContainer extends Component {
   }
 }
 
-WebContainer.defaultProps = {
+WebHtmlView.defaultProps = {
   innerCSS: '',
   autoHeight: true
 };
 
-export default WebContainer
+export default WebHtmlView
