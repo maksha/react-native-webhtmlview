@@ -1,0 +1,24 @@
+{
+  "name": "react-native-webhtmlview",
+  "version": "0.0.1",
+  "description": "A wrapper around React Native WebView which renders HTML content",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maksha/react-native-webhtmlview.git"
+  },
+  "keywords": [
+    "react-native",
+    "html",
+    "webview"
+  ],
+  "author": "Muhammad Baja Aksha <maksha@gmail.com> (https://maksha.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maksha/react-native-webhtmlview/issues"
+  },
+  "homepage": "https://github.com/maksha/react-native-webhtmlview#readme"
+}
