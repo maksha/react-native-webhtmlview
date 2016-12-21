@@ -1,6 +1,6 @@
 {
   "name": "react-native-webhtmlview",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A wrapper around React Native WebView which renders HTML content",
   "main": "index.js",
   "scripts": {

@@ -53,8 +53,7 @@ class WebHtmlView extends Component {
     const startHtmlDoc = `
       <html><head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>${innerCSS}</style></head>
-        <body>
+        <style>${innerCSS}</style></head><body>
     `
     const endHtmlDoc = '</body></html>'
 

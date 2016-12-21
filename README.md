@@ -1,10 +1,18 @@
 # **react-native-webhtmlview**
 
-A wrapper around React native WebView which renders HTML content with auto height.
+A wrapper around React Native WebView which renders static HTML content in a WebView with auto height enabled and the ability to add CSS.
 
 ## **Installation**
 
-  `npm i react-native-webhtmlview --save`
+Inside your React Native project, run the following command:
+
+  `npm install react-native-webhtmlview --save`
+
+## **Props**
+
+- **`source.html`**: Inject the static html with a custom JavaScript and loads it in the WebView
+- **`autoHeight`** (default: `true`): Adjust the height of the webview and turns off scrolling.
+- **`innerCSS`**: The CSS style to apply to the html content.
 
 ## **Sample Usage**
 
@@ -33,4 +41,5 @@ class Example extends Component {
   }
 }
 
+module.exports = Example
 ```
