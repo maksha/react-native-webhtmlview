@@ -1,7 +1,7 @@
 {
   "name": "react-native-webhtmlview",
-  "version": "0.0.2",
-  "description": "A wrapper around React Native WebView which renders HTML content",
+  "version": "0.0.3",
+  "description": "A wrapper around React Native WebView which renders HTML content with auto height enabled and the ability to add CSS styles.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
