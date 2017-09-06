@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { WebView } from 'react-native'
+import { Linking, WebView } from 'react-native'
 
 class WebHtmlView extends Component {
   constructor(props) {
@@ -18,6 +18,15 @@ class WebHtmlView extends Component {
     }
     if (typeof this.props.onNavigationStateChange === 'function') {
       this.props.onNavigationStateChange()
+    }
+  }
+  
+  onShouldStartLoadWithRequest(event) {
+    if (event.url.search('about:blank') !== -1) {
+      return true
+    } else {
+      Linking.openURL(event.url)
+      return false
     }
   }
 
@@ -79,6 +88,7 @@ class WebHtmlView extends Component {
         javaScriptEnabled={autoHeight}
         showsVerticalScrollIndicator={false}
         showsHorizontalScrollIndicator={false}
+        onShouldStartLoadWithRequest={this.onShouldStartLoadWithRequest}
         onNavigationStateChange={this._handleNavigationStateChange.bind(this)} />
     )
   }
