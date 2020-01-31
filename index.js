@@ -31,7 +31,7 @@ class WebHtmlView extends Component {
   }
 
   render() {
-    let {source, autoHeight, style, innerCSS} = this.props;
+    let {source, autoHeight, style, innerCSS, enableScrolling} = this.props;
 
     if (!source) {
       return null
@@ -84,7 +84,7 @@ class WebHtmlView extends Component {
         source={source}
         style={[style, autoHeight ? {height: this.state.height + 25} : null]}
         automaticallyAdjustContentInsets={false}
-        scrollEnabled={!autoHeight}
+        scrollEnabled={enableScrolling}
         javaScriptEnabled={autoHeight}
         showsVerticalScrollIndicator={false}
         showsHorizontalScrollIndicator={false}
@@ -96,7 +96,8 @@ class WebHtmlView extends Component {
 
 WebHtmlView.defaultProps = {
   innerCSS: '',
-  autoHeight: true
+  autoHeight: true,
+  enableScrolling: false,
 };
 
 export default WebHtmlView
