@@ -11,7 +11,7 @@ Inside your React Native project, run the following command:
 ## **Props**
 
 - **`source.html`**: Inject the static html with a custom JavaScript and loads it in the WebView
-- **`autoHeight`** (default: `true`): Adjust the height of the webview and turns off scrolling.
+- **`autoHeight`**: Adjust the height of the webview and turns off scrolling.
 - **`innerCSS`**: The CSS style to apply to the html content.
 
 ## **Sample Usage**
@@ -49,7 +49,7 @@ module.exports = Example
 ```
 MIT License
 
-Copyright (c) 2016 Muhammad Baja Aksha
+Copyright (c) 2016-2020 Muhammad Baja Aksha
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
