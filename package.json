@@ -1,6 +1,6 @@
 {
   "name": "react-native-webhtmlview",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A wrapper around React Native WebView which renders HTML content with auto height enabled and the ability to add CSS styles.",
   "main": "index.js",
   "scripts": {
